@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home.base.base');
 });
 
 Route::group(['prefix' => 'admin'], function() {
@@ -29,3 +29,6 @@ Route::group(['prefix' => 'admin'], function() {
 		Route::get('delete/{id}', ['as' => 'admin.category.getDelete', 'uses' => 'CategoryController@getDelete']);
 	});
 });
+
+
+
