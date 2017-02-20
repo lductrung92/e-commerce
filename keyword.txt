@@ -1,0 +1,17 @@
+Fixed position menu when scrolling until it hits the bottom of a relative container
+	var oritop = -100;
+	$(window).scroll(function() { //on scroll,
+		var scrollt = window.scrollY; //get the amount of scrolling
+		var elm = $(".box"); //get the box we want to make sticky
+		if(oritop < 0) {
+			oritop= elm.offset().top; //cache the original top offset
+		}
+		if(scrollt >= oritop) { //if you scrolled past it,
+			elm.css({"position": "fixed", "top": 0, "left": 0}); //make it sticky
+		}
+		else { //otherwise
+			elm.css("position", "static"); //reset it to default positioning
+		}
+	});
+	
+	demo: http://jsfiddle.net/glee/yLRVZ/

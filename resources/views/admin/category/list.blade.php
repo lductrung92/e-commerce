@@ -1,4 +1,4 @@
-@extends('admin.base.base');
+@extends('admin.base.base')
 
 @section('title')
 	Danh sách nhóm sản phẩm

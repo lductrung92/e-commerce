@@ -15,6 +15,23 @@
             <li>
                 <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
             </li>
+
+            <li>
+                <a href="admin/category/list"><i class="fa fa-wrench fa-fw"></i> Category<span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level">
+                    <li>
+                        <a href="admin/category/list">List</a>
+                    </li>
+                    <li>
+                        <a href="admin/category/insert">Insert</a>
+                    </li>
+                </ul>
+            </li>
+
+
+
+
+
             <li>
                 <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Charts<span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">

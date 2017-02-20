@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-
+    <base href="{{ asset('/') }}" />
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,12 +10,14 @@
     <meta name="author" content="">
 
     <title>@yield('title')</title>
-    <base href="{{ asset('/') }}" />
+    
     <!-- Bootstrap Core CSS -->
     <link href="sb-admin/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- MetisMenu CSS -->
     <link href="sb-admin/vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="jAlert-master/dist/jAlert.css" />
 
      @yield('css')
 
@@ -39,7 +41,7 @@
     <div id="wrapper">
 
         <!-- Navigation -->
-        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" >
             @include('admin.base.header')
             @include('admin.base.sidebar')
         </nav>
@@ -55,6 +57,9 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="sb-admin/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="jAlert-master/dist/jAlert.min.js"></script>
+    <script src="jAlert-master/dist/jAlert-functions.min.js">
 
     <!-- Metis Menu Plugin JavaScript -->
     <script src="sb-admin/vendor/metisMenu/metisMenu.min.js"></script>
